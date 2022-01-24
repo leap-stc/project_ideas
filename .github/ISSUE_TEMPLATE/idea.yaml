@@ -1,0 +1,38 @@
+name: Project Idea
+description: Propose a new project idea
+labels: ["idea"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to create a new project idea!
+        This form will help us gather the information needed to match
+        researchers to your project.
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: Provide a short summary of the project scientific objectives for a general audience
+    validations:
+      required: true
+  - type: textarea
+    id: references
+    attributes:
+      label: References
+      description: Provide a list of relevant publications that are required background for this project
+  - type: textarea
+    id: data
+    attributes:
+      label: Data
+      description: Describe the datasets required for this project.
+      placeholder: Provide as much detail as possible
+      value: |
+        ### Dataset A
+        - Link to the website / online documentation for the data
+        - The file format (e.g. netCDF, csv)
+        - How are the source files organized? (e.g. one file per day)
+        - How are the source files accessed (e.g. FTP); provide an example link if possible
+        - Any special steps required to access the data (e.g. password required)
+
+        ### Dataset B
+        etc.
